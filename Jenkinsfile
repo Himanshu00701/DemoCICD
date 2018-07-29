@@ -60,13 +60,13 @@ pipeline {
      }
    }
 
-   stage ('Deploy'){
+/*   stage ('Deploy'){
      steps{       
        sh "chmod 777 ./scripts/ecs_deploy.sh"  
        sh "perl -pi -e 's/\r//' ./scripts/ecs_deploy.sh"
        sh "./scripts/ecs_deploy.sh -r us-east-1 -c ${cluster_name} -n ${service_name} -i ${aws_repo}:v_${env.BUILD_NUMBER} -m 50 -M 200 -t 600 -D 1"
      }
-   } 
+   } */
 //  
 //  }
 //
