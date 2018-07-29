@@ -52,7 +52,7 @@ pipeline {
      }
    }  
  
-   stage ('Docker Push'){
+/*   stage ('Docker Push'){
      steps{       
        sh "chmod 777 ./scripts/docker_push.sh"  
        sh "perl -pi -e 's/\r//' ./scripts/docker_push.sh"
@@ -66,7 +66,7 @@ pipeline {
        sh "perl -pi -e 's/\r//' ./scripts/ecs_deploy.sh"
        sh "./scripts/ecs_deploy.sh -r us-east-1 -c ${cluster_name} -n ${service_name} -i ${aws_repo}:v_${env.BUILD_NUMBER} -m 50 -M 200 -t 600 -D 1"
      }
-   }
+   } */
 //  
 //  }
 //
